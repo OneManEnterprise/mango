@@ -1,0 +1,11 @@
+#displayedImage {
+    width: 100%;
+    height: 100vh;
+}
+#images-form {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.hidden {
+    transform: translateX(-100%);
+}
