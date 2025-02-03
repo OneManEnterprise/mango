@@ -1,0 +1,25 @@
+<head>
+  <title>🥭 ManGO 🥭</title>
+  <link rel="icon" href="data:image/svg+xml><text>🥭</text></svg>">
+  <link rel="stylesheet" href="darkmode.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="images-target">
+  <form id="images-form" hx-get="/images" hx-target="#images-target">
+    <label for="url">URL:</label><br>
+    <input type="text" id="url" name="url"><br>
+
+    <input type="checkbox" id="http" name="protocol" value="http">
+    <label for="http">HTTP</label><br>
+    <input type="checkbox" id="https" name="protocol" value="https">
+    <label for="https">HTTPS</label><br>
+
+    <input type="checkbox" id="www" name="www" value="www">
+    <label for="www">WWW</label><br>
+
+    <input type="submit" value="Fetch Images">
+  </form>
+</body>
